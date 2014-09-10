@@ -1,0 +1,124 @@
+body {
+	background-color:#D5EAF4;
+	font-family:'Josefin Sans', sans-serif;
+	background:url(../images/sky.jpg) no-repeat center center fixed;
+	background-size:cover
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+#menu {
+	height:300px;
+	width:500px;
+	margin:auto;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+
+#white, #photos, #blog, #about {
+	height: 48%;
+	width:48%;
+	float: left; 
+	opacity:0.6;
+}
+
+#white {
+	background-color:white; 
+	margin-bottom:1%; 
+	margin-right:1%;
+	text-align:center;
+}
+
+#white:hover {
+	background-color:black;
+	color:white;
+	opacity:1.0;
+	transition: all 2s;
+}
+
+#white p {
+	margin-top:26%;
+	margin-bottom:0;
+	font-size:20px;
+}
+
+#photos {
+	margin-bottom:1%; 
+	background-color:red;
+}
+
+#photos p {
+	margin-top:26%;
+	font-size:20px;
+	text-align:center;
+	color:white;
+}
+
+#photos:hover {
+	box-shadow: 2px 2px 0px #404040;
+	background:url(../images/gate.jpg);
+	background-size: 100% 100%;
+	opacity:1.0;
+/*	transition: all 2s;*/
+}
+
+#blog {
+	margin-right:1%; 
+	background-color:yellow;
+}
+
+#blog p {
+	margin-top:26%;
+	font-size:20px;
+	text-align:center;
+}
+
+#blog:hover {
+	box-shadow: 2px 2px 0px #404040;
+	background:url(../images/bikes.jpg);
+	background-size: 100% 100%;
+	color:white;
+	opacity:1.0;
+}
+
+#about { 
+	background-color:blue;
+}
+
+#about p {
+	margin-top:26%;
+	font-size:20px;
+	text-align:center;
+	color:white;
+}
+
+#about:hover {
+	box-shadow: 2px 2px 0px #404040;
+	background:url(../images/mosque.jpg);
+	background-size: 100% 100%;
+	opacity:1.0;
+}
+
+@media all and (max-width:480px) {
+	body {
+		background:url(../images/serjilla.jpg);
+		background-size:cover
+	}
+	#menu {
+		height:600px;
+		width:250px;
+	}
+	#white, #photos, #blog, #about {
+		height: 24%;
+		width:99%;
+	}
+	#blog {
+		margin-bottom:1%;
+	}
+}
